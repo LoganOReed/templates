@@ -14,6 +14,10 @@
          path = ./latex-synctex-template;
          description = "Reproducible LaTeX with synctex";
        };
+       latex-full = {
+         path = ./latex-full-template;
+         description = "Reproducible LaTeX with every feature";
+       };
      }
     // official-templates.templates;
     # // other-templates.templates;
