@@ -7,7 +7,7 @@
     # other-templates.url = "github:some-other/templates";
   };
  
-   outputs = { self, official-templates, other-templates, ... }: {
+   outputs = { self, official-templates, ... }: {
  
      templates = {
        latex-synctex = {
