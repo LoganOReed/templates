@@ -18,6 +18,10 @@
          path = ./latex-full-template;
          description = "Reproducible LaTeX with every feature";
        };
+       latex = {
+         path = ./latex;
+         description = "Feature Full LaTeX Template";
+       };
      }
     // official-templates.templates;
     # // other-templates.templates;
