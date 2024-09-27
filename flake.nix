@@ -10,6 +10,10 @@
    outputs = { self, official-templates, ... }: {
  
      templates = {
+       python-sci = {
+         path = ./python-sci;
+         description = "Scientific Python";
+       };
        latex-synctex = {
          path = ./latex-synctex-template;
          description = "Reproducible LaTeX with synctex";
@@ -22,10 +26,7 @@
          path = ./latex;
          description = "Feature Full LaTeX Template";
        };
-       python-sci = {
-         path = ./python;
-         description = "Basic Python Template";
-       };
+       
      }
     // official-templates.templates;
     # // other-templates.templates;
