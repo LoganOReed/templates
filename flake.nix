@@ -22,7 +22,7 @@
          path = ./latex;
          description = "Feature Full LaTeX Template";
        };
-       python = {
+       python-sci = {
          path = ./python;
          description = "Basic Python Template";
        };
