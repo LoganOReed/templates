@@ -9,7 +9,7 @@
  
    outputs = { self, official-templates, ... }: {
  
-     templates = {
+     templates = official-templates.templates // {
        latex-synctex = {
          path = ./latex-synctex-template;
          description = "Reproducible LaTeX with synctex";
@@ -22,8 +22,12 @@
          path = ./latex;
          description = "Feature Full LaTeX Template";
        };
-     }
-    // official-templates.templates;
+       python = {
+         path = ./python;
+         description = "Basic Python Template";
+       };
+     };
+    # // official-templates.templates;
     # // other-templates.templates;
  
    };
