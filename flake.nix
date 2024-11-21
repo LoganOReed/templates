@@ -10,6 +10,10 @@
    outputs = { self, official-templates, ... }: {
  
      templates = {
+       anki = {
+         path = ./anki;
+         description = "Anki Setup for Latex";
+       };
        python-sci = {
          path = ./python-sci;
          description = "Scientific Python";
