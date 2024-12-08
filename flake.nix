@@ -3,13 +3,14 @@
  
   inputs = {
     official-templates.url = "github:NixOS/templates";
+    poetry.url = "github:nix-community/poetry2nix";
     # Example additional template repo
     # other-templates.url = "github:some-other/templates";
   };
  
-   outputs = { self, official-templates, ... }: {
+   outputs = { self, official-templates, poetry, ... }: {
  
-     templates = {
+     templates = official-templates.templates // {
        anki = {
          path = ./anki;
          description = "Anki Setup for Latex";
@@ -32,7 +33,7 @@
        };
        
      }
-    // official-templates.templates;
+    // {python = (builtins.getAttr "app" poetry.templates);};
     # // other-templates.templates;
  
    };
