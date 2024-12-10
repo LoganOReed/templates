@@ -19,6 +19,10 @@
          path = ./python-sci;
          description = "Scientific Python";
        };
+       fortran = {
+         path = ./fortran;
+         description = "Use fortran within python with f2py";
+       };
        latex-synctex = {
          path = ./latex-synctex-template;
          description = "Reproducible LaTeX with synctex";
