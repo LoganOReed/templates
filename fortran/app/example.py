@@ -1,4 +1,4 @@
-import euclidian_norm
+from .fortran import euclidian_norm
 import numpy as np
 
 def norm():
