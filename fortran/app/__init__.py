@@ -70,6 +70,7 @@ def compile_fortran_modules():
                     "-m",
                     module_name,
                     "-llapack",
+                    "-lblas",
                 ],
                 cwd=FORTRAN_DIR,  # Run the compilation command in the fortran directory
                 check=True,
