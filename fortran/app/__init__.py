@@ -69,6 +69,7 @@ def compile_fortran_modules():
                     fortran_file,
                     "-m",
                     module_name,
+                    "-llapack",
                 ],
                 cwd=FORTRAN_DIR,  # Run the compilation command in the fortran directory
                 check=True,

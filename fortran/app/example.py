@@ -1,10 +1,14 @@
-from .fortran import euclidian_norm
+from .fortran import lapack_sort
 import numpy as np
 
-def norm():
+def sort():
     """docstring for norm"""
-    print(f"{euclidian_norm.euclidian_norm(np.array([0,2]))}")
+    print(np.__config__.show())
+    a = np.array([0,2, 199, 54, 123, 3], dtype=np.float64)
+    print(a)
+    print(f"{lapack_sort.lapack_sort(a)}")
+    print(a)
     
 
 if __name__ == "__main__":
-    norm()
+    sort()

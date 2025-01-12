@@ -3,7 +3,7 @@
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     poetry2nix = {
       url = "github:nix-community/poetry2nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -48,7 +48,7 @@
           #
           # Use this shell for developing your app.
           default = pkgs.mkShell {
-            packages = [ pkgs.meson pkgs.gfortran pkgs.ninja];
+            packages = [ pkgs.meson pkgs.gfortran pkgs.ninja pkgs.lapack pkgs.blas];
             inputsFrom = [ pkgs.myapp ];
           };
 
