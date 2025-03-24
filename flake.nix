@@ -23,6 +23,10 @@
          path = ./fortran;
          description = "Use fortran within python with f2py";
        };
+       octave = {
+         path = ./octave;
+         description = "Use octave and fortran within python with Oct2Py and f2py";
+       };
        latex-synctex = {
          path = ./latex-synctex-template;
          description = "Reproducible LaTeX with synctex";
