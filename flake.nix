@@ -39,6 +39,10 @@
          path = ./latex;
          description = "Feature Full LaTeX Template";
        };
+       beamer = {
+         path = ./latex-beamer;
+         description = "LaTeX Beamer Template";
+       };
        
      }
     // {python = (builtins.getAttr "app" poetry.templates);};
