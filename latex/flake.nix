@@ -58,7 +58,7 @@
             which
             python39Packages.pygments
           ];
-
+          SOURCE_DATE_EPOCH = toString self.lastModified;
           shellHook = ''
             export AUX=$(mktemp -d)
             latexmk -auxdir=$AUX -lualatex -pretex="\pdfvariable suppressoptionalinfo 512\relax" -usepretex \
