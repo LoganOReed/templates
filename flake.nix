@@ -19,6 +19,10 @@
          path = ./python-sci;
          description = "Scientific Python";
        };
+       julia = {
+         path = ./julia;
+         description = "Julia setup with Pluto";
+       };
        fortran = {
          path = ./fortran;
          description = "Use fortran within python with f2py";
